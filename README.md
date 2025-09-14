@@ -1,5 +1,5 @@
-# WiFi-Pinapple
-Step-by-Step guide to create a wifi-pinapple using raspberry pi with Evil Portal feature. *Ethical use only*
+# WiFi-Pinapple  *Use Ethically*
+Step-by-Step guide to create a wifi-pinapple using raspberry pi with Evil Portal feature.
 You have to MANUALLY set up the IP, Gateway and DNS for the victim test device as in this setup i have set the IP assign to MANUAL. Check out the `Issues` at the bottom of this readme file guide.
 If you dont get redirected to the evil page when opening any http/https website go to the ip `192.168.1.2/` manually and click on portal, the evil page will load. If you want to redirect then check if `iptables` is set correctly. this project is in contineous improvement but the basic Attack simulation works!!
 
