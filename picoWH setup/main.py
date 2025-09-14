@@ -21,12 +21,14 @@ oled.show()
 
 # this will keep the AP active
 while True:
-    if not ap.active():
-        ap.active(True)
     oled.fill(0)
     oled.text("WiFi Pineapple", 0, 0)
-    oled.text("AP: VlTBPL", 0, 20)
-    oled.text("Status: Active", 0, 40)
+    oled.text("AP: FreeWiFi", 0, 20)
+    if ap.active():
+        client_count = len(ap.status('stations'))
+        oled.text("Status: Active", 0, 40)
+        oled.text(f"Clients: {client_count}", 0, 50)
+    else:
+        oled.text("Status: Inactive", 0, 40)
     oled.show()
-    time.sleep(5)
-
+    time.sleep(2)
