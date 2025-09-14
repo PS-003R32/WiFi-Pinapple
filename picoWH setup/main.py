@@ -10,12 +10,12 @@ ap = network.WLAN(network.AP_IF)
 ap.active(False)
 time.sleep(1)
 ap.active(True)
-ap.config(ssid='VlTBPL', security=0) # change the AP name that you want
+ap.config(ssid='FreeWiFi', security=0) # change the AP name that you want
 ap.ifconfig(('192.168.1.1', '255.255.255.0', '192.168.1.1', '192.168.1.2'))
 
 oled.fill(0)
 oled.text("WiFi Pineapple", 0, 0)
-oled.text("AP: VlTBPL", 0, 20) # change the AP name you want here for display on the oled
+oled.text("AP: FreeWiFi", 0, 20) # change the AP name you want here for display on the oled
 oled.text("IP: 192.168.1.1", 0, 40)
 oled.show()
 
